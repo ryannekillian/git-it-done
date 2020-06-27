@@ -13,7 +13,8 @@ var getUserRepos = function(user) {
       response.json().then(function(data) {
         displayRepos(data, user);
       });
-    } else {
+    } 
+    else {
       alert("Error: " + response.statusText);
     }
   })
